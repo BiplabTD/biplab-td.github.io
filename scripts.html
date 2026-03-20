@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Scripts | Biplab Mohanty</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; background: #fff; }
+        nav { display: flex; justify-content: flex-end; padding: 20px 5%; border-bottom: 1px solid #eee; }
+        nav a { margin-left: 25px; text-decoration: none; color: #1a1a1a; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; }
+        .container { max-width: 1200px; margin: auto; padding: 60px 5%; }
+        .code-block { background: #1a1a1a; color: #aaffaa; padding: 30px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; margin: 20px 0 50px 0; line-height: 1.4; }
+        .script-desc h2 { font-size: 2rem; text-transform: uppercase; margin-bottom: 5px; }
+        .script-desc p { color: #666; margin-bottom: 20px; }
+        footer { padding: 60px 10%; background: #fafafa; display: flex; justify-content: space-between; border-top: 1px solid #eee; margin-top: 50px; }
+        .btn-link { display: inline-block; background: #1a1a1a; color: white; padding: 12px 30px; text-decoration: none; border-radius: 4px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Portfolio</a>
+    <a href="credits.html">Films & Games</a>
+    <a href="personal.html">Personal Works</a>
+    <a href="scripts.html">Technical Scripts</a>
+</nav>
+
+<div class="container">
+    <h1 style="font-size: 4rem; text-transform: uppercase; letter-spacing: -2px;">Technical Tools</h1>
+    
+    <div class="script-desc">
+        <h2>Auto-Rigging Core (Python)</h2>
+        <p>A modular rigging system designed for Maya to automate limb creation.</p>
+        <div class="code-block">
+import maya.cmds as cmds
+
+def create_modular_limb(side='L', type='arm'):
+    # Logic for generating joint chains and controls
+    print(f"Generating {type} for {side} side...")
+    cmds.joint(p=(0, 10, 0), n=f"{side}_{type}_root_JNT")
+        </div>
+    </div>
+
+    <div class="script-desc">
+        <h2>Pipeline Exporter</h2>
+        <p>A tool for seamless asset transfer between Maya and Unreal Engine.</p>
+        <div class="code-block">
+# Pipeline script snippet
+export_path = "C:/Project/Assets/"
+print("Asset validation complete. Exporting FBX...")
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div>
+        <h3>Contact</h3>
+        <p>Email: <b>biplabmohanty.td@gmail.com</b></p>
+    </div>
+    <div style="text-align: right;">
+        <a href="https://www.linkedin.com/in/biplab-mohanty-5377a1240/" class="btn-link">CONNECT</a>
+    </div>
+</footer>
+
+</body>
+</html>
